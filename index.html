@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* cover black transparency */
+        body{
+           
+           text-align: center;
+           margin-top: 200px;
+           background-image: url("bskt.png");
+           margin-right: 100px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        img{
+            width:fit-content;
+            height:auto;
+            border-radius: 20px;
+            margin-top: 0%;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+
+        }
+        .flex-child-magenta{
+            margin-right: 100px;
+        }
+        .flex-child-green{
+            padding-left: 100px;
+        }
+        #a{
+            margin-top: 10px;
+            background-color: aqua;
+        }
+        #a:active{
+            background-color: rgb(255, 220, 254);
+            font-size: 13px;
+        }
+        #p1{
+            background-color: rgb(248, 255, 205);
+            border-radius: 10px;
+            border: 2px dotted rgb(193, 25, 25);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 25px;
+        }
+        #p2{
+            background-color: rgb(248, 255, 205);
+            border-radius: 10px;
+            border: 2px dotted rgb(193, 25, 25);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 25px;
+        }
+        #p1:hover{
+            background-color: red;
+            margin: 5px solid purple;
+        }
+        #p2:hover{
+            background-color: blue;
+            margin: 5px solid purple;
+        }
+        #l{
+            background-image: url("https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3amQ3YWZzbHQ5ZzBsbGsxOXVzMzdqMmhoa3A2bDgycGl1d3l5NDZ3cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o6ozh46EbuWRYAcSY/100.webp");
+            color: brown;
+            text-decoration-line:underline;
+            text-decoration-style:dotted;
+            text-decoration-color:darkblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    
+    
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+  <div class="flex-child-magenta">
+    <span id="l">HOME</span> <br>
+    <p id="p1"> 0 </p> <br>
+    <button id="a" onclick="a1()">+1</button>
+    <button id="a" onclick="a2()">+2</button>
+    <button id="a" onclick="a3()">+3</button>
+  </div>
+  
+  <div class="flex-child-green">
+    <span id="l">GUEST</span> <br>
+    <p id="p2"> 0 </p> <br>
+    <button id="a" onclick="b1()">+1</button>
+    <button id="a" onclick="b2()">+2</button>
+    <button id="a" onclick="b3()">+3</button>
+  </div>
+  
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
